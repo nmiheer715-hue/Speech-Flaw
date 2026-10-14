@@ -1,0 +1,152 @@
+{
+  "recall": 0.952,
+  "precision": 0.909,
+  "per_kind": {
+    "Dragging": {
+      "recall": 1.0,
+      "mean_iou": 0.97,
+      "mean_onset_err_s": 0.09,
+      "n": 1
+    },
+    "Monotone": {
+      "recall": 1.0,
+      "mean_iou": 0.838,
+      "mean_onset_err_s": 0.358,
+      "n": 4
+    },
+    "Mumbled / muffled": {
+      "recall": 1.0,
+      "mean_iou": 0.955,
+      "mean_onset_err_s": 0.093,
+      "n": 3
+    },
+    "Rushing": {
+      "recall": 0.8,
+      "mean_iou": 0.838,
+      "mean_onset_err_s": 0.217,
+      "n": 5
+    },
+    "Too quiet": {
+      "recall": 1.0,
+      "mean_iou": 0.649,
+      "mean_onset_err_s": 0.359,
+      "n": 3
+    },
+    "Unwanted pause": {
+      "recall": 1.0,
+      "mean_iou": 0.883,
+      "mean_onset_err_s": 0.112,
+      "n": 5
+    }
+  },
+  "rows": [
+    {
+      "clip": "gettysburg_tts",
+      "take": "L0_ideal (self)",
+      "gold": 0,
+      "pred": 0,
+      "tp": 0,
+      "fp": 0,
+      "overall": 10.0
+    },
+    {
+      "clip": "gettysburg_tts",
+      "take": "L1_almost_perfect",
+      "gold": 1,
+      "pred": 1,
+      "tp": 1,
+      "fp": 0,
+      "overall": 9.6
+    },
+    {
+      "clip": "gettysburg_tts",
+      "take": "L2_minor",
+      "gold": 2,
+      "pred": 1,
+      "tp": 1,
+      "fp": 0,
+      "overall": 9.9
+    },
+    {
+      "clip": "gettysburg_tts",
+      "take": "L3_noticeable",
+      "gold": 3,
+      "pred": 3,
+      "tp": 3,
+      "fp": 0,
+      "overall": 7.3
+    },
+    {
+      "clip": "gettysburg_tts",
+      "take": "L4_poor",
+      "gold": 4,
+      "pred": 4,
+      "tp": 4,
+      "fp": 0,
+      "overall": 5.8
+    },
+    {
+      "clip": "gettysburg_tts",
+      "take": "L5_botched",
+      "gold": 5,
+      "pred": 6,
+      "tp": 5,
+      "fp": 1,
+      "overall": 4.4
+    },
+    {
+      "clip": "gettysburg_tts",
+      "take": "S_rush",
+      "gold": 1,
+      "pred": 1,
+      "tp": 1,
+      "fp": 0,
+      "overall": 9.6
+    },
+    {
+      "clip": "gettysburg_tts",
+      "take": "S_drag",
+      "gold": 1,
+      "pred": 2,
+      "tp": 1,
+      "fp": 1,
+      "overall": 8.6
+    },
+    {
+      "clip": "gettysburg_tts",
+      "take": "S_monotone",
+      "gold": 1,
+      "pred": 1,
+      "tp": 1,
+      "fp": 0,
+      "overall": 8.4
+    },
+    {
+      "clip": "gettysburg_tts",
+      "take": "S_quiet",
+      "gold": 1,
+      "pred": 1,
+      "tp": 1,
+      "fp": 0,
+      "overall": 9.7
+    },
+    {
+      "clip": "gettysburg_tts",
+      "take": "S_mumble",
+      "gold": 1,
+      "pred": 1,
+      "tp": 1,
+      "fp": 0,
+      "overall": 9.1
+    },
+    {
+      "clip": "gettysburg_tts",
+      "take": "S_pause",
+      "gold": 1,
+      "pred": 1,
+      "tp": 1,
+      "fp": 0,
+      "overall": 9.2
+    }
+  ]
+}

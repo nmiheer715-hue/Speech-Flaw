@@ -1,0 +1,263 @@
+{
+  "clip_id": "gettysburg_tts",
+  "source": "test.wav",
+  "sr": 16000,
+  "baseline": "L0_ideal.wav",
+  "takes": [
+    {
+      "file": "L1_almost_perfect.wav",
+      "level": "L1_almost_perfect",
+      "flaws": [
+        {
+          "kind": "Unwanted pause",
+          "op": "pause",
+          "level": 1,
+          "start": 0.95,
+          "end": 1.95,
+          "orig_start": 0.95,
+          "orig_end": 0.95
+        }
+      ]
+    },
+    {
+      "file": "L2_minor.wav",
+      "level": "L2_minor",
+      "flaws": [
+        {
+          "kind": "Rushing",
+          "op": "rush",
+          "level": 1,
+          "start": 10.415,
+          "end": 12.381,
+          "orig_start": 10.415,
+          "orig_end": 12.99
+        },
+        {
+          "kind": "Too quiet",
+          "op": "quiet",
+          "level": 1,
+          "start": 17.341,
+          "end": 19.601,
+          "orig_start": 17.965,
+          "orig_end": 20.24
+        }
+      ]
+    },
+    {
+      "file": "L3_noticeable.wav",
+      "level": "L3_noticeable",
+      "flaws": [
+        {
+          "kind": "Unwanted pause",
+          "op": "pause",
+          "level": 2,
+          "start": 6.145,
+          "end": 7.745,
+          "orig_start": 6.145,
+          "orig_end": 6.145
+        },
+        {
+          "kind": "Monotone",
+          "op": "monotone",
+          "level": 2,
+          "start": 12.0,
+          "end": 15.95,
+          "orig_start": 10.415,
+          "orig_end": 14.38
+        },
+        {
+          "kind": "Rushing",
+          "op": "rush",
+          "level": 2,
+          "start": 23.405,
+          "end": 24.993,
+          "orig_start": 21.85,
+          "orig_end": 24.255
+        }
+      ]
+    },
+    {
+      "file": "L4_poor.wav",
+      "level": "L4_poor",
+      "flaws": [
+        {
+          "kind": "Rushing",
+          "op": "rush",
+          "level": 3,
+          "start": 9.27,
+          "end": 11.322,
+          "orig_start": 9.27,
+          "orig_end": 12.99
+        },
+        {
+          "kind": "Unwanted pause",
+          "op": "pause",
+          "level": 2,
+          "start": 12.697,
+          "end": 14.297,
+          "orig_start": 14.38,
+          "orig_end": 14.38
+        },
+        {
+          "kind": "Monotone",
+          "op": "monotone",
+          "level": 3,
+          "start": 20.142,
+          "end": 24.142,
+          "orig_start": 20.24,
+          "orig_end": 24.255
+        },
+        {
+          "kind": "Mumbled / muffled",
+          "op": "mumble",
+          "level": 2,
+          "start": 25.857,
+          "end": 29.702,
+          "orig_start": 25.985,
+          "orig_end": 29.845
+        }
+      ]
+    },
+    {
+      "file": "L5_botched.wav",
+      "level": "L5_botched",
+      "flaws": [
+        {
+          "kind": "Unwanted pause",
+          "op": "pause",
+          "level": 3,
+          "start": 0.95,
+          "end": 3.45,
+          "orig_start": 0.95,
+          "orig_end": 0.95
+        },
+        {
+          "kind": "Rushing",
+          "op": "rush",
+          "level": 3,
+          "start": 7.72,
+          "end": 9.947,
+          "orig_start": 5.235,
+          "orig_end": 9.27
+        },
+        {
+          "kind": "Monotone",
+          "op": "monotone",
+          "level": 3,
+          "start": 11.502,
+          "end": 15.027,
+          "orig_start": 10.84,
+          "orig_end": 14.38
+        },
+        {
+          "kind": "Too quiet",
+          "op": "quiet",
+          "level": 3,
+          "start": 18.597,
+          "end": 20.857,
+          "orig_start": 17.965,
+          "orig_end": 20.24
+        },
+        {
+          "kind": "Mumbled / muffled",
+          "op": "mumble",
+          "level": 3,
+          "start": 22.452,
+          "end": 26.572,
+          "orig_start": 21.85,
+          "orig_end": 25.985
+        }
+      ]
+    },
+    {
+      "file": "S_rush.wav",
+      "level": "S_rush",
+      "flaws": [
+        {
+          "kind": "Rushing",
+          "op": "rush",
+          "level": 2,
+          "start": 6.145,
+          "end": 8.213,
+          "orig_start": 6.145,
+          "orig_end": 9.27
+        }
+      ]
+    },
+    {
+      "file": "S_drag.wav",
+      "level": "S_drag",
+      "flaws": [
+        {
+          "kind": "Dragging",
+          "op": "drag",
+          "level": 2,
+          "start": 10.84,
+          "end": 14.133,
+          "orig_start": 10.84,
+          "orig_end": 12.99
+        }
+      ]
+    },
+    {
+      "file": "S_monotone.wav",
+      "level": "S_monotone",
+      "flaws": [
+        {
+          "kind": "Monotone",
+          "op": "monotone",
+          "level": 2,
+          "start": 6.145,
+          "end": 10.4,
+          "orig_start": 6.145,
+          "orig_end": 10.415
+        }
+      ]
+    },
+    {
+      "file": "S_quiet.wav",
+      "level": "S_quiet",
+      "flaws": [
+        {
+          "kind": "Too quiet",
+          "op": "quiet",
+          "level": 2,
+          "start": 10.415,
+          "end": 12.975,
+          "orig_start": 10.415,
+          "orig_end": 12.99
+        }
+      ]
+    },
+    {
+      "file": "S_mumble.wav",
+      "level": "S_mumble",
+      "flaws": [
+        {
+          "kind": "Mumbled / muffled",
+          "op": "mumble",
+          "level": 2,
+          "start": 22.595,
+          "end": 25.97,
+          "orig_start": 22.595,
+          "orig_end": 25.985
+        }
+      ]
+    },
+    {
+      "file": "S_pause.wav",
+      "level": "S_pause",
+      "flaws": [
+        {
+          "kind": "Unwanted pause",
+          "op": "pause",
+          "level": 2,
+          "start": 10.84,
+          "end": 12.44,
+          "orig_start": 10.84,
+          "orig_end": 10.84
+        }
+      ]
+    }
+  ]
+}
