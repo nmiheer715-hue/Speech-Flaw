@@ -29,8 +29,8 @@ explains each deviation with the underlying acoustic numbers, and scores the tak
 Prerequisites: Python 3.10+, `ffmpeg` (for mp3/m4a input).
 
 ```bash
-git clone https://github.com/<you>/speechflaw.git
-cd speechflaw
+git clone https://github.com/nmiheer715-hue/Speech-Flaw.git
+cd Speech-Flaw
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 pip install faster-whisper          # optional: word labels on each flaw
