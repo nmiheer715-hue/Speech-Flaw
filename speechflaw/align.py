@@ -42,6 +42,9 @@ def cached_words(wav_path: str, transcript: str = ""):
         return json.loads(cache.read_text())
     if not available():
         return None
-    words = align_words(str(p), transcript)
+    try:
+        words = align_words(str(p), transcript)
+    except Exception:          # e.g. model download blocked/offline: run without word labels
+        return None
     cache.write_text(json.dumps(words, indent=1))
     return words
