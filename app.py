@@ -92,7 +92,7 @@ fig = make_subplots(rows=5, cols=1, shared_xaxes=True, vertical_spacing=0.03,
                                     "Energy (dB re speaker median)",
                                     "Local speech rate (participant ÷ baseline, from DTW slope)",
                                     "High-frequency energy share >2 kHz (dB) — clarity"])
-BASE, TEST = "#9AA0A6", "#1F6FEB"
+BASE, TEST = "#9AA0A6", ("#58A6FF" if st.get_option("theme.base") == "dark" else "#1F6FEB")
 
 
 def pair(row, yt, yb, name):
@@ -135,8 +135,11 @@ if show_gold:
     for g in gold:
         fig.add_vrect(x0=g["start"], x1=max(g["end"], g["start"] + 0.05), line=dict(color="black", dash="dash",
                       width=1), fillcolor="rgba(0,0,0,0)", row=1, col=1)
+DARK = st.get_option("theme.base") == "dark"
 fig.update_layout(height=980, margin=dict(l=40, r=20, t=40, b=30),
-                  legend=dict(orientation="h", y=1.04, x=0), hovermode="x unified")
+                  legend=dict(orientation="h", y=1.04, x=0), hovermode="x unified",
+                  template="plotly_dark" if DARK else "plotly_white",
+                  paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)")
 fig.update_xaxes(title_text="participant time (s)", row=5, col=1)
 st.plotly_chart(fig, use_container_width=True)
 if show_gold:
