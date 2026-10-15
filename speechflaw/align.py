@@ -23,8 +23,12 @@ def available() -> bool:
 
 def align_words(wav_path: str, transcript: str = "", model_size: str = "base.en"):
     from faster_whisper import WhisperModel
+    import librosa
+    # decode with librosa (16 kHz mono float32) instead of faster-whisper's PyAV
+    # decoder, which breaks on some PyAV versions
+    audio, _ = librosa.load(wav_path, sr=16000, mono=True)
     model = WhisperModel(model_size, device="cpu", compute_type="int8")
-    segments, _ = model.transcribe(wav_path, word_timestamps=True,
+    segments, _ = model.transcribe(audio, word_timestamps=True,
                                    initial_prompt=transcript or None, beam_size=5,
                                    temperature=0.0)       # deterministic decoding
     words = []
