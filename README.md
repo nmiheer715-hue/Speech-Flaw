@@ -7,6 +7,8 @@ It aligns the two recordings in time with Dynamic Time Warping, finds the exact 
 where the delivery deviates (rushing, dragging, monotone, trailing off, mumbling, broken or skipped pauses),
 explains each deviation with the underlying acoustic numbers, and scores the take on a fixed rubric.
 
+**Demo video:** https://youtu.be/CAbm3HQTGFM
+
 ![dashboard](docs/dashboard.png)
 
 ## What's in the repo
